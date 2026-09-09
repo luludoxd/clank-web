@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0b1120;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+.shell { max-width: 1050px; margin: 0 auto; padding: 36px 20px 60px; }
+header { display:flex; gap:18px; align-items:center; margin-bottom:28px; }
+.brand { font-size:34px; font-weight:800; color:#38bdf8; }
+h1,h2,p { margin-top:0; }
+h1 { margin-bottom:5px; font-size:28px; }
+header p,.muted { color:#94a3b8; }
+.panel {
+  background:#172033; border:1px solid #263449; border-radius:14px;
+  padding:24px; margin-bottom:20px;
+}
+label { display:block; margin:18px 0 7px; font-weight:700; }
+input {
+  width:100%; padding:13px 14px; border-radius:9px; border:1px solid #334155;
+  background:#0f172a; color:#fff; font-size:15px;
+}
+button {
+  margin-top:20px; border:0; border-radius:9px; padding:13px 18px;
+  background:#0284c7; color:white; font-weight:700; cursor:pointer;
+}
+button:disabled { opacity:.55; cursor:wait; }
+button.secondary { background:#334155; margin-top:0; }
+.status { margin-top:15px; color:#bae6fd; white-space:pre-wrap; }
+.stats { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:20px; }
+.stats div { background:#172033; border:1px solid #263449; border-radius:12px; padding:18px; }
+.stats strong { display:block; font-size:28px; color:#38bdf8; }
+.stats span { color:#94a3b8; }
+.result {
+  border:1px solid #334155; background:#0f172a; border-radius:12px;
+  padding:18px; margin-top:12px;
+}
+.result-top { display:flex; justify-content:space-between; gap:15px; }
+.score { font-weight:800; color:#fbbf24; }
+.name { font-size:18px; font-weight:800; }
+a { color:#38bdf8; }
+.comment { margin:12px 0; color:#e2e8f0; white-space:pre-wrap; }
+.flags span {
+  display:inline-block; background:#1e293b; border-radius:999px;
+  padding:5px 9px; margin:3px; color:#cbd5e1; font-size:13px;
+}
+ul { color:#cbd5e1; }
+.hidden { display:none; }
+@media (max-width:700px) {
+  .stats { grid-template-columns:1fr; }
+  header { align-items:flex-start; flex-direction:column; }
+}
